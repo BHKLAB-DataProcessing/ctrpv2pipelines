@@ -1,0 +1,36 @@
+{
+  "pipeline": {
+    "name": "ctrpv2ProfilesAssemble"
+  },
+  "transform": {
+    "image": "bhklab/pharmacogx:v3",
+    "cmd": [
+      "Rscript", 
+      "/pfs/ctrpv2Profiles/assembleData.R"]
+    },
+  "parallelism_spec":{
+    "constant": 1
+  },
+  "resource_requests": {
+    "memory": "1G",
+    "cpu": 0.1
+  },
+  "input": {
+    "cross": [
+      {
+        "git": {
+          "url": "https://github.com/BHKLAB-Pachyderm/ctrpv2Profiles.git",
+          "name": "",
+          "branch": "master"
+        }
+      },
+      {
+        "pfs": {
+          "repo": "calculatectrpv2RAW",
+          "name": "input",
+          "glob": "/"
+        }
+      } 
+    ]
+  }
+}
