@@ -9,7 +9,7 @@
       "/pfs/ctrpv2RecalculateFromRaw/recalculateSlice.R"]
     },
   "parallelism_spec":{
-    "constant": 5
+    "constant": 17
   },
   "resource_requests": {
     "memory": "1G",
