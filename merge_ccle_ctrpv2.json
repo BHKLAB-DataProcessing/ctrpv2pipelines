@@ -1,0 +1,36 @@
+{
+  "pipeline": {
+    "name": "merge_ccle_ctrpv2"
+  },
+  "transform": {
+    "image": "bhklab/pharmacogx:v7",
+    "cmd": [
+      "Rscript", 
+      "/pfs/ctrpv2_ccle_merge/merge_pset.R"]
+    },
+  
+  "input": {
+    "cross": [
+      {
+        "git": {
+          "url": "https://github.com/BHKLAB-Pachyderm/ctrpv2_ccle_merge.git",
+          "name": "",
+          "branch": "master"
+        }
+      },
+      {
+        "pfs": {
+          "repo": "get_CTRP",
+          "glob": "/"
+        }
+      },
+      
+      {
+        "pfs": {
+          "repo": "getCCLE",
+          "glob": "/"
+        }
+      }
+    ]
+  }
+}
