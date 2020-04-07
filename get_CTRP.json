@@ -6,7 +6,7 @@
     "image": "bhklab/pharmacogx:v7",
     "cmd": [
       "Rscript", 
-      "/pfs/getCTRPv2/CTRPv2.R"]
+      "/pfs/getCTRPv2/CTRPv2.R", "asdasd1431djwushd"]
     },
   
   "input": {
