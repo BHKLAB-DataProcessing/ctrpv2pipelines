@@ -10,7 +10,7 @@
     ]
   },
   "resource_requests": {
-    "memory": 100M"
+    "memory": "100M"
   },
   "input": {
     "cross": [
