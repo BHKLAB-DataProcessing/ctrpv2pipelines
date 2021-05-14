@@ -3,7 +3,7 @@
     "name": "get_CTRP"
   },
   "transform": {
-    "image": "bhklab/pharmacogx2.0:v1",
+    "image": "bhklab/pharmacogx2.0:v3",
     "cmd": [
       "Rscript", 
       "/pfs/getCTRPv2/CTRPv2.R", "asdasd1431djwushd"]
